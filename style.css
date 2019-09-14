@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.banner{
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("landscape-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-list{
+    width: 40%;
+    min-width: 500px;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 1rem;
+    list-style: none;
+}
+
+.nav-list-item{
+    text-transform: uppercase;
+}
+
+.nav-list-item a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-list-item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #cbae86;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 350ms ease-in;
+}
+
+.nav-list-item a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.banner-inner{
+    width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 400px;
+}
+
+.banner-text-header{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.banner-text-heading{
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    padding: .3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-text-heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: .3rem;
+    width: 100%;
+    height: Calc(100% - .6rem);
+    background: #cbae86;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 350ms ease-in;
+    z-index: -1;
+}
+
+.banner-text-heading:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.banner-text-job{
+    font-weight: 400;
+    font-size: 1rem;
+    padding: .3rem;
+    letter-spacing: 0.1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-text-job::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #cbae86;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 350ms ease-in;
+    z-index: -1;
+}
+
+.banner-text-job:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.banner-text-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: .5rem 0 1.5rem;
+}
+
+.banner-text-button{
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: .5rem;
+    margin: 0 1rem;
+    background: rgba(0,0,0,0.4);
+    border: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.banner-text-button::after {
+    content: "";
+    position: absolute;
+    left: -50%;
+    bottom: -100%;
+    width: 200%;
+    height: 400%;
+    border-radius: 50%;
+    background: #cbae86;
+    transform: scale(0);
+    transform-origin: center;
+    transition: transform 350ms ease-in;
+    z-index: -1;
+}
+
+.banner-text-button:hover::after {
+    transform: scale(1);
+    transform-origin: center;
+}
+
+.banner-text-button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner-text-contacts{
+    display: flex;
+    justify-content: center;
+}
+
+.banner-text-contact{
+    padding: 0 1rem;
+    font-size: 2rem;
+}
+
+.banner-text-contact a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 350ms ease-in-out;
+}
+
+.github-contact a:hover{
+    color: #211F1F;
+}
+
+.linkedin-contact a:hover{
+    color: #0e76a8;
+}
+
+.container{
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.full-section{
+    width: 100%;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-heading{
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.section-inner{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.full-section:nth-child(even){
+    background:#eee;
+    color: #000;
+}
+
+.full-section:nth-child(odd){
+    background:#121212;
+    color: #fff;
+}
+
+.portfolio-card{
+    flex: 1;
+    text-align: left;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.portfolio-card:nth-child(2){
+    padding: 0 2.5rem;
+}
+
+.portfolio-card-photo--outer{
+    width: 100%;
+    height: 150px;
+    background: #ccc;
+    overflow: hidden;
+}
+
+.portfolio-card-photo--inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: transform 350ms ease-in-out;
+}
+
+.portfolio-card:hover .portfolio-card-photo--inner{
+    transform: scale(2);
+}
+
+.portfolio-card-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .5rem 0;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.portfolio-card-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: .5rem;
+    width: 30%;
+    height: 2px;
+    background: #cbae86;
+    transform-origin: right;
+}
+
+.portfolio-card-des {
+    text-align: justify;
+    padding-bottom: .5rem;
+}
+
+.portfolio-card-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-card-button{
+    padding: .5rem;
+    text-transform: uppercase;
+
+}
