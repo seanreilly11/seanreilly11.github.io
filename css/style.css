@@ -20,7 +20,8 @@ body{
 .banner{
     width: 100vw;
     height: 100vh;
-    background-image: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("landscape-bg.jpg");
+    background: #000020;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/landscape-bg.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -60,7 +61,7 @@ nav{
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: #cbae86;
+    background: #121212;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 350ms ease-in;
@@ -110,7 +111,7 @@ nav{
     bottom: .3rem;
     width: 100%;
     height: Calc(100% - .6rem);
-    background: #cbae86;
+    background: #121212;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 350ms ease-in;
@@ -138,7 +139,7 @@ nav{
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: #cbae86;
+    background: #121212;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 350ms ease-in;
@@ -177,7 +178,7 @@ nav{
     width: 200%;
     height: 400%;
     border-radius: 50%;
-    background: #cbae86;
+    background: #121212;
     transform: scale(0);
     transform-origin: center;
     transition: transform 350ms ease-in;
@@ -265,7 +266,7 @@ nav{
 }
 
 .portfolio-card:nth-child(2){
-    padding: 0 2.5rem;
+    margin: 0 2.5rem;
 }
 
 .portfolio-card-photo--outer{
