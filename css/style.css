@@ -21,11 +21,35 @@ body{
     width: 100vw;
     height: 100vh;
     background: #000020;
-    background-image: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/landscape-bg.jpg");
+    background-image: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0)), url("../images/landscape-bg.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
+    transform-origin: bottom right;
+    transition: transform ease-in-out .5s;
+}
+
+.hidden-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    z-index: -10000;
+}
+
+.hidden-menu ul{
+    right: 0;
+    margin: 1.5rem 2rem;
+}
+
+.hidden-menu ul li{
+    text-align: right;
+    padding-bottom: .5rem;
+    list-style: none;
+    font-size: 1.4rem;
 }
 
 nav{
@@ -58,9 +82,9 @@ nav{
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -4px;
     width: 100%;
-    height: 2px;
+    height: 4px;
     background: #121212;
     transform: scaleX(0);
     transform-origin: right;
@@ -118,10 +142,10 @@ nav{
     z-index: -1;
 }
 
-.banner-text-heading:hover::after {
+/*.banner-text-heading:hover::after {
     transform: scaleX(1);
     transform-origin: left;
-}
+}*/
 
 .banner-text-job{
     font-weight: 400;
@@ -146,53 +170,29 @@ nav{
     z-index: -1;
 }
 
-.banner-text-job:hover::after {
+/*.banner-text-job:hover::after {
     transform: scaleX(1);
     transform-origin: right;
-}
-
-.banner-text-buttons{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: .5rem 0 1.5rem;
-}
+}*/
 
 .banner-text-button{
     font-size: 1rem;
     text-transform: uppercase;
-    padding: .5rem;
-    margin: 0 1rem;
-    background: rgba(0,0,0,0.4);
+    padding: 0.5rem 1rem;
+    margin: .5rem 0 1.5rem;
+    background: white;
+    color: black;
+    border-radius: 10rem;
     border: none;
-    position: relative;
     z-index: 1;
-    overflow: hidden;
-}
-
-.banner-text-button::after {
-    content: "";
-    position: absolute;
-    left: -50%;
-    bottom: -100%;
-    width: 200%;
-    height: 400%;
-    border-radius: 50%;
-    background: #121212;
-    transform: scale(0);
-    transform-origin: center;
-    transition: transform 350ms ease-in;
-    z-index: -1;
-}
-
-.banner-text-button:hover::after {
-    transform: scale(1);
-    transform-origin: center;
-}
-
-.banner-text-button a{
-    color: #fff;
+    color: #000;
     text-decoration: none;
+    font-weight: 600;
+    transition: transform ease-in-out .3s;
+}
+
+.banner-text-button:hover{
+    transform: translateY(-5px);
 }
 
 .banner-text-contacts{
@@ -281,11 +281,26 @@ nav{
     justify-content: center;
     align-items: center;
     height: 100%;
-    transition: transform 350ms ease-in-out;
+    transition: transform 500ms ease-in-out;
+    background-size: cover; 
+    background-position: center;
 }
 
-.portfolio-card:hover .portfolio-card-photo--inner{
-    transform: scale(2);
+#restaurant-card{
+    background-image: url(../images/restaurant.jpg); 
+}
+
+#union-card{
+    background-image: url(../images/union.jpg); 
+}
+
+.portfolio-card-photo--outer:hover .portfolio-card-photo--inner{
+    transform: scale(1.2);
+}
+
+.portfolio-card-photo{
+    width: 100%;
+    height: 100%;
 }
 
 .portfolio-card-title{
@@ -321,5 +336,4 @@ nav{
 .portfolio-card-button{
     padding: .5rem;
     text-transform: uppercase;
-
 }

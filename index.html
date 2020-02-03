@@ -15,19 +15,16 @@
             <li class="nav-list-item"><a href="#portfolio">Portfolio</a></li>
             <li class="nav-list-item"><a href="#education">Education</a></li>
             <li class="nav-list-item"><a href="#about">About</a></li>
-            <li class="nav-list-item"><a href="#contact">Contact</a></li>
+            <li class="nav-list-item" id="menu"><a>Contact</a></li>
         </ul>
     </nav>
     <div class="banner-inner">
-        <div class="banner-text">
+        <div class="banner-text" data-aos="fade-down">
             <div class="banner-text-header">
                 <h1 class="banner-text-heading">Sean Reilly</h1>
                 <h2 class="banner-text-job">Frontend Web Developer</h2>
             </div>
-            <div class="banner-text-buttons">
-                <button class="banner-text-button"><a href="#portfolio">Portfolio</a></button>
-                <button class="banner-text-button"><a href="#education">Education</a></button>
-            </div>
+            <a class="banner-text-button" href="#portfolio">See Projects</a>
             <div class="banner-text-contacts">
                 <div class="banner-text-contact github-contact"><a href="https://github.com/seanreilly11" target="_blank"><i class="fab fa-github-square"></i></a></div>
                 <div class="banner-text-contact linkedin-contact"><a href="https://www.linkedin.com/in/sean-reilly-940b88192/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
@@ -36,13 +33,21 @@
     </div>
 </div> <!-- banner ENDS-->
 
+<div class="hidden-menu">
+    <ul>
+        <li>Portfolio</li>
+        <li>Education</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
 <section class="full-section portfolio" id="portfolio">
     <div class="container">
-        <h1 class="section-heading" data-aos="fade-right" data-aos-delay="50">Portfolio</h1>
+        <h1 class="section-heading" data-aos="fade-down">Portfolio</h1>
         <div class="section-inner">
             <div class="portfolio-card" data-aos="zoom-in-up">
                 <div class="portfolio-card-text">
-                    <div class="portfolio-card-photo--outer"><div class="portfolio-card-photo--inner">1</div></div>
+                    <div class="portfolio-card-photo--outer"><div class="portfolio-card-photo--inner" id="restaurant-card"></div></div>
                     <div class="portfolio-card-title">Restaurant website</div>
                     <div class="portfolio-card-des">This is a project website created as a practise for more advanced Javascript as well as using JSON data.</div>
                 </div>
@@ -53,7 +58,7 @@
             </div>
             <div class="portfolio-card" data-aos="zoom-in-up"data-aos-delay="250">
                 <div class="portfolio-card-text">
-                    <div class="portfolio-card-photo--outer"><div class="portfolio-card-photo--inner">2</div></div>
+                    <div class="portfolio-card-photo--outer"><div class="portfolio-card-photo--inner"id="union-card"></div></div>
                     <div class="portfolio-card-title">Union Tattoo</div>
                     <div class="portfolio-card-des">A polytech group project to redesign the user experience of an existing website.</div>
                 </div>
@@ -78,7 +83,7 @@
 </section>
 <section class="full-section education" id="education">
     <div class="container">
-        <h1 class="section-heading" data-aos="fade-left" data-aos-delay="50">Education</h1>
+        <h1 class="section-heading" data-aos="fade-down" data-aos-delay="50">Education</h1>
         <div class="section-inner">
 
         </div>
@@ -86,7 +91,7 @@
 </section>
 <section class="full-section about" id="about">
     <div class="container">
-        <h1 class="section-heading" data-aos="fade-right" data-aos-delay="50">About</h1>
+        <h1 class="section-heading" data-aos="fade-down" data-aos-delay="50">About</h1>
         <div class="section-inner">
 
         </div>
@@ -94,7 +99,7 @@
 </section>
 <section class="full-section contact" id="contact">
     <div class="container">
-        <h1 class="section-heading" data-aos="fade-left" data-aos-delay="50">Contact</h1>
+        <h1 class="section-heading" data-aos="fade-down" data-aos-delay="50">Contact</h1>
         <div class="section-inner">
 
         </div>
@@ -106,6 +111,11 @@
         once: true,
         duration: 1000,
         delay: 100
+    });
+</script>
+<script>
+    document.getElementById("menu").addEventListener("click",function(){
+        document.getElementsByClassName("banner")[0].style.transform = "rotate(-25deg)";
     });
 </script>
 </body>
