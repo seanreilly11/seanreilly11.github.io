@@ -3,10 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <title>Sean Reilly</title>
-        <link
-            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-            rel="stylesheet"
-        />
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
@@ -18,8 +14,10 @@
             <nav>
                 <h2 class="brand">Sean Reilly</h2>
                 <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="#projects">Projects</a>
+                    </li>
                     <li class="nav-list-item"><a href="#">About</a></li>
-                    <li class="nav-list-item"><a href="#">Projects</a></li>
                     <li class="nav-list-item"><a href="#">Contact</a></li>
                 </ul>
                 <i class="fas fa-bars open-menu"></i>
@@ -53,58 +51,125 @@
                         </a>
                     </div>
                     <div class="cover-contact email-contact">
-                        <a href="#" target="_blank">
+                        <a
+                            href="mailto:seanreilly123@hotmail.com"
+                            target="_top"
+                        >
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
                 </div>
-                <button class="cta-projects">Projects</button>
+                <button class="cta-projects" id="btn-projects">Projects</button>
             </div>
         </div>
 
-        <div class="content">
-            <h1 class="content-heading" id="projects">My Projects</h1>
-            <div class="project-card proj-1">
-                <div class="project-img-box">
-                    <img
-                        class="project-img"
-                        src="images/restaurant.JPG"
-                        alt="Restaurant Website"
-                    />
+        <div class="content" id="projects">
+            <div class="content-section">
+                <h2 class="content-heading">My Projects</h2>
+                <div class="project-card proj-1">
+                    <div class="project-img-box">
+                        <img
+                            class="project-img"
+                            src="images/restaurant.JPG"
+                            alt="Restaurant Website"
+                        />
+                    </div>
+                    <div class="project-details">
+                        <div class="project-title">Restaurant Website</div>
+                        <div class="project-body">This is a website</div>
+                    </div>
                 </div>
-                <div class="project-details">
-                    <div class="project-title">Restaurant Website</div>
-                    <div class="project-body">This is a website</div>
+                <div class="project-card proj-2">
+                    <div class="project-img-box">
+                        <img
+                            class="project-img"
+                            src="images/union.JPG"
+                            alt="Union Tattoo"
+                        />
+                    </div>
+                    <div class="project-details">
+                        <div class="project-title">Union Tattoo</div>
+                        <div class="project-body">
+                            This was a redesign project at Yoobee where the task
+                            was to pick a website and redesign it by doing a
+                            full UX research project
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="project-card proj-2">
-                <div class="project-img-box">
-                    <img
-                        class="project-img"
-                        src="images/union.JPG"
-                        alt="Union Tattoo"
-                    />
+                <div class="project-card proj-3">
+                    <div class="project-img-box">
+                        <img
+                            class="project-img"
+                            src="images/trade.JPG"
+                            alt="Union Tattoo"
+                        />
+                    </div>
+                    <div class="project-details">
+                        <div class="project-title">Trade Easy</div>
+                        <div class="project-body">
+                            This was a redesign project at Yoobee where the task
+                            was to pick a website and redesign it by doing a
+                            full UX research project
+                        </div>
+                    </div>
                 </div>
-                <div class="project-details">
-                    <div class="project-title">Union Tattoo</div>
-                    <div class="project-body">
-                        This was a redesign project at Yoobee where the task was
-                        to pick a website and redesign it by doing a full UX
-                        research project
+                <div class="project-card proj-4">
+                    <div class="project-img-box">
+                        <img
+                            class="project-img"
+                            src="images/garage.JPG"
+                            alt="Union Tattoo"
+                        />
+                    </div>
+                    <div class="project-details">
+                        <div class="project-title">Garage Project</div>
+                        <div class="project-body">
+                            This was a redesign project at Yoobee where the task
+                            was to pick a website and redesign it by doing a
+                            full UX research project
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="content-section">
+                <h2 class="content-heading">About Me</h2>
+            </div>
+            <p class="text"></p>
+        </div>
+        <!-- content ENDS -->
+
+        <div class="footer">
+            <span class="bg-shape red"></span>
+            <span class="bg-shape blue"></span>
+            <span class="bg-shape yellow"></span>
+            <span class="bg-shape green"></span>
+
+            <div class="footer-contacts">
+                <div class="footer-contact github-contact">
+                    <a href="https://github.com/seanreilly11" target="_blank">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </div>
+                <div class="footer-contact linkedin-contact">
+                    <a
+                        href="https://www.linkedin.com/in/sean-reilly-940b88192/"
+                        target="_blank"
+                    >
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="footer-contact email-contact">
+                    <a href="mailto:seanreilly123@hotmail.com" target="_top">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <p>
+                &copy; 2020 Sean Reilly | Designed and Developed by Sean Reilly
+            </p>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                once: true,
-                duration: 1000,
-                delay: 100,
-            });
-        </script>
         <script
             src="https://kit.fontawesome.com/6c7bb61f4b.js"
             crossorigin="anonymous"

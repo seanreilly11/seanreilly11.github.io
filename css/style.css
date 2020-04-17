@@ -23,48 +23,48 @@ body {
     position: relative;
     min-height: 100vh;
     background: #131313;
-    z-index: -4;
+    font-family: Merriweather, serif;
 }
 
 .bg-shape {
     position: absolute;
-    z-index: -1;
 }
 
 .red {
     background: rgba(255, 0, 0, 0.9);
-    width: 50vw;
-    height: 35vh;
+    width: 50%;
+    height: 35%;
     top: 0;
     left: 0;
 }
 
 .blue {
     background: rgba(0, 0, 255, 0.9);
-    width: 10vw;
-    height: 15vh;
+    width: 10%;
+    height: 15%;
     top: 0;
-    right: 20vw;
+    right: 20%;
 }
 
 .green {
     background: rgba(0, 255, 0, 0.9);
-    width: 35vw;
-    height: 35vh;
+    width: 35%;
+    height: 35%;
     bottom: 0;
-    right: 10vw;
+    right: 10%;
 }
 
 .yellow {
     background: rgba(255, 255, 0, 0.9);
-    width: 40vw;
-    height: 5vh;
-    top: 75vh;
+    width: 40%;
+    height: 5%;
+    top: 75%;
     left: 0;
 }
 
 .brand {
     font-size: 2rem;
+    z-index: 1;
 }
 
 .open-menu,
@@ -79,6 +79,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .nav-list {
@@ -119,14 +120,14 @@ nav {
 }
 
 .full-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: #fff;
     color: #000;
-    z-index: 2;
+    z-index: 10;
     display: none;
 }
 
@@ -135,6 +136,7 @@ nav {
     top: 5vh;
     right: 15%;
     color: #000;
+    z-index: 11;
 }
 
 .menu-list {
@@ -144,7 +146,7 @@ nav {
 }
 
 .menu-list-item {
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 2.5;
     font-weight: 600;
     text-align: right;
@@ -215,12 +217,16 @@ nav {
 .content {
     background: #fefefe;
     color: #000;
-    padding: 5rem 0;
+    padding-bottom: 5rem;
+}
+
+.content-section {
+    padding-top: 5rem;
 }
 
 .content-heading {
     font-family: Merriweather, serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -230,7 +236,7 @@ button {
 
 .project-card {
     width: 80%;
-    margin: 2rem auto;
+    margin: 2.5rem auto;
     border: 1px solid #ccc;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -258,6 +264,41 @@ button {
     font-family: Merriweather, serif;
 }
 
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    background: #131313;
+    color: #fff;
+    position: relative;
+}
+
+.footer P {
+    z-index: 2;
+}
+
+.footer-contacts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    z-index: 2;
+}
+
+.footer-contact {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 350ms ease-in-out;
+}
 /* meadia queries */
 @media (min-width: 768px) {
     .open-menu {
@@ -280,30 +321,30 @@ button {
         font-size: 1.6rem;
     }
     .red {
-        width: 35vw;
-        height: 50vh;
+        width: 35%;
+        height: 50%;
         top: 0;
         left: 0;
     }
 
     .blue {
-        width: 5vw;
-        height: 15vh;
+        width: 5%;
+        height: 15%;
         top: 0;
-        right: 30vw;
+        right: 30%;
     }
 
     .green {
-        width: 35vw;
-        height: 45vh;
+        width: 35%;
+        height: 45%;
         bottom: 0;
-        right: 5vw;
+        right: 5%;
     }
 
     .yellow {
-        width: 40vw;
-        height: 10vh;
-        top: 75vh;
+        width: 40%;
+        height: 10%;
+        top: 75%;
         left: 0;
     }
     .project-card {
