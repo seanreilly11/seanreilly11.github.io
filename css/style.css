@@ -16,54 +16,37 @@ html {
 body {
     font-family: "Open Sans", sans-serif;
     min-height: 100vh;
+    color: #1a1a1a;
 }
 
 .cover {
-    color: #fff;
     position: relative;
     min-height: 100vh;
-    background: #131313;
+    background: #e3f7fb;
     font-family: Merriweather, serif;
 }
 
-.bg-shape {
+.cover-border:nth-child(1) {
     position: absolute;
-}
-
-.red {
-    background: rgba(255, 0, 0, 0.9);
-    width: 50%;
-    height: 35%;
-    top: 0;
+    top: 17vh;
     left: 0;
+    width: 100%;
+    height: 2vh;
+    background: #214d67;
 }
 
-.blue {
-    background: rgba(0, 0, 255, 0.9);
-    width: 10%;
-    height: 15%;
+.cover-border:nth-child(2) {
+    position: absolute;
     top: 0;
-    right: 20%;
-}
-
-.green {
-    background: rgba(0, 255, 0, 0.9);
-    width: 35%;
-    height: 35%;
-    bottom: 0;
-    right: 10%;
-}
-
-.yellow {
-    background: rgba(255, 255, 0, 0.9);
-    width: 40%;
-    height: 5%;
-    top: 75%;
-    left: 0;
+    right: 20vw;
+    width: 2vh;
+    height: 100%;
+    background: linear-gradient(to bottom, #214d67, #e3f7fb);
 }
 
 .brand {
     font-size: 2rem;
+    font-weight: 400;
     z-index: 1;
 }
 
@@ -96,7 +79,7 @@ nav {
 }
 
 .nav-list-item a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     position: relative;
 }
@@ -108,10 +91,10 @@ nav {
     bottom: -4px;
     width: 100%;
     height: 4px;
-    background: #fff;
+    background: #628ba3;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform 350ms ease-in;
+    transition: transform 200ms ease-in;
 }
 
 .nav-list-item a:hover::after {
@@ -168,7 +151,7 @@ nav {
 .cover-contacts {
     display: flex;
     justify-content: center;
-    margin-top: 0.5rem;
+    margin: 1rem 0;
 }
 
 .cover-contact {
@@ -177,13 +160,13 @@ nav {
 }
 
 .cover-contact a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     transition: color 350ms ease-in-out;
 }
 
 .github-contact a:hover {
-    color: #aaa;
+    color: rgb(100, 100, 100);
 }
 
 .linkedin-contact a:hover {
@@ -195,28 +178,71 @@ nav {
 }
 
 .cta-projects {
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    font-weight: 600;
-    margin: 2rem 0.5rem;
+    position: relative;
+    padding: 1rem 1.5rem;
+    background-color: transparent;
+    border: 2px solid #214d67;
     cursor: pointer;
-    transition: transform 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out;
     outline: none;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    letter-spacing: 0.2rem;
+    transition: box-shadow 350ms ease-in-out;
+}
+
+.cta-projects:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .cta-projects:active {
     transform: scale(0.95);
 }
 
-.cta-projects:hover {
-    background-color: #ccc;
+/* border animation */
+.cta-projects::after,
+.cta-projects::before {
+    content: "";
+    position: absolute;
+    background: #e3f7fb;
+    width: 4px;
+    transition: all 350ms ease-in-out;
+}
+
+.cta-projects::before {
+    bottom: 0;
+    left: -3px;
+    top: 50%;
+}
+
+.cta-projects::after {
+    top: 0;
+    right: -3px;
+    bottom: 50%;
+}
+
+.cta-projects:hover:before {
+    top: 0;
+    bottom: 50%;
+}
+
+.cta-projects:hover:after {
+    top: 50%;
+    bottom: 0;
+}
+
+/* scroll donw animation */
+.down-anim {
+    /* border-left: 1px solid #000;
+    border-bottom: 1px solid #000; */
+    transform: rotate(45);
+    width: 50px;
+    height: 50px;
+    background-color: #000;
 }
 
 .content {
     background: #fcfcfc;
-    color: #000;
+    /* color: #000; */
     padding-bottom: 5rem;
 }
 
@@ -228,6 +254,8 @@ nav {
     font-family: Merriweather, serif;
     font-size: 2.5rem;
     text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
 }
 
 button {
@@ -255,7 +283,7 @@ button {
 
 .project-details {
     flex-basis: 60%;
-    padding: 0 1rem 1rem;
+    padding: 1rem;
 }
 
 .project-body-tools {
@@ -271,6 +299,7 @@ button {
     font-size: 1.4rem;
     padding-bottom: 0.5rem;
     font-family: Merriweather, serif;
+    color: #214d67;
 }
 
 .content-container {
@@ -317,7 +346,7 @@ button {
     text-decoration: none;
     transition: color 350ms ease-in-out;
 }
-/* meadia queries */
+/* media queries */
 @media (min-width: 768px) {
     .open-menu {
         display: none;
@@ -338,33 +367,6 @@ button {
     .cta-projects {
         font-size: 1.6rem;
     }
-    .red {
-        width: 35%;
-        height: 50%;
-        top: 0;
-        left: 0;
-    }
-
-    .blue {
-        width: 5%;
-        height: 15%;
-        top: 0;
-        right: 30%;
-    }
-
-    .green {
-        width: 35%;
-        height: 45%;
-        bottom: 0;
-        right: 5%;
-    }
-
-    .yellow {
-        width: 40%;
-        height: 10%;
-        top: 75%;
-        left: 0;
-    }
     .project-card {
         flex-direction: row;
     }
@@ -378,5 +380,8 @@ button {
         flex-basis: 40%;
         padding: 1rem;
         order: 2;
+    }
+    .cover-border:nth-child(2) {
+        left: 16rem;
     }
 }
