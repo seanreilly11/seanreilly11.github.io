@@ -23,12 +23,11 @@ body {
     position: relative;
     min-height: 100vh;
     background: #e3f7fb;
-    font-family: Merriweather, serif;
 }
 
 .cover-border:nth-child(1) {
     position: absolute;
-    top: 17vh;
+    top: 6.5rem;
     left: 0;
     width: 100%;
     height: 2vh;
@@ -47,7 +46,6 @@ body {
 .brand {
     font-size: 2rem;
     font-weight: 400;
-    z-index: 1;
 }
 
 .open-menu,
@@ -62,7 +60,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 3;
 }
 
 .nav-list {
@@ -148,6 +145,7 @@ nav {
 .main-heading {
     font-size: 2.5rem;
     font-family: Merriweather, serif;
+    font-weight: normal;
 }
 
 .cover-contacts {
@@ -157,7 +155,7 @@ nav {
 }
 
 .cover-contact {
-    padding: 0 1rem;
+    padding: 0 1rem 1rem;
     font-size: 1.5rem;
 }
 
@@ -168,7 +166,7 @@ nav {
 }
 
 .github-contact a:hover {
-    color: rgb(100, 100, 100);
+    color: #000;
 }
 
 .linkedin-contact a:hover {
@@ -181,14 +179,14 @@ nav {
 
 .cta-projects {
     position: relative;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     background-color: transparent;
     border: 2px solid #214d67;
     cursor: pointer;
     outline: none;
+    text-decoration: none;
+    color: #1a1a1a;
     font-size: 1.2rem;
-    margin: 0 1rem;
-    letter-spacing: 0.2rem;
     transition: box-shadow 350ms ease-in-out;
 }
 
@@ -417,15 +415,8 @@ button {
 
 .contact-section {
     display: grid;
-    /* align-items: center;
-    justify-content: center; */
-    grid-template-rows: auto auto auto;
-    background: #e3f7fb;
-}
-
-.contact-caption {
-    text-align: center;
-    padding: 3rem;
+    background: #214d67;
+    color: #f3f3f3;
 }
 
 .contacts {
@@ -434,22 +425,27 @@ button {
 }
 
 .contact {
-    padding: 2rem;
+    margin: 3rem 2rem 2rem;
     text-align: center;
     font-size: 3rem;
 }
 
 .contact a {
-    color: #1a1a1a;
+    color: #f3f3f3;
     transition: color 350ms ease-in-out;
 }
 
 .cv-button {
-    margin: 2rem auto 3rem;
+    margin: 0 auto 3rem;
     max-width: 250px;
-    color: #1a1a1a;
+    color: #f3f3f3;
     text-decoration: none;
-    font-family: Merriweather, serif;
+    border-color: #628ba3;
+}
+
+.cv-button::after,
+.cv-button::before {
+    background: #214d67;
 }
 
 .footer {
@@ -477,7 +473,7 @@ button {
         font-size: 3rem;
     }
     .cover-contact {
-        padding: 0 1.5rem;
+        padding: 0 1.5rem 1rem;
         font-size: 2rem;
     }
     .cta-projects {

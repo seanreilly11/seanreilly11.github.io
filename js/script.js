@@ -8,8 +8,4 @@ $(document).ready(function () {
     $(".menu-list-item").click(function () {
         $(".full-menu").hide();
     });
-    $("#btn-projects").click(function () {
-        document.getElementById("projects").scrollIntoView();
-        console.log("scroll");
-    });
 });
