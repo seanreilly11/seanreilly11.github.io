@@ -453,42 +453,17 @@ button {
 }
 
 .footer {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     padding: 3rem;
     font-size: 0.8rem;
     background: #1a1a1a;
     color: #fff;
-    position: relative;
-}
-
-.footer P {
-    z-index: 2;
-}
-
-.footer-contacts {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-    z-index: 2;
-}
-
-.footer-contact {
-    padding: 0 1rem;
-    font-size: 1.5rem;
-}
-
-.footer-contact a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 350ms ease-in-out;
 }
 
 /* media queries */
-@media (min-width: 1099px) {
+@media (min-width: 768px) {
     .open-menu {
         display: none;
     }
@@ -516,7 +491,7 @@ button {
     }
 }
 
-@media (min-width: 1380px) {
+@media (min-width: 998px) {
     .project-img-box {
         display: inline-block;
         position: absolute;
