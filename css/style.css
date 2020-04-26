@@ -425,20 +425,21 @@ button {
 
 .contact-section {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    justify-content: center;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
     grid-template-rows: auto auto auto;
     background: #e3f7fb;
 }
 
 .contact-caption {
-    grid-column: 1 / 6;
     text-align: center;
     padding: 3rem;
 }
 
 .contacts {
-    grid-column: 2 / 3;
     display: flex;
+    justify-content: center;
 }
 
 .contact {
@@ -453,8 +454,8 @@ button {
 }
 
 .cv-button {
-    grid-column: 2 / 3;
-    margin: 2rem;
+    margin: 2rem auto 3rem;
+    max-width: 250px;
 }
 
 .footer {
