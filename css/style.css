@@ -423,6 +423,40 @@ button {
     margin: 0.5rem;
 }
 
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto;
+    background: #e3f7fb;
+}
+
+.contact-caption {
+    grid-column: 1 / 6;
+    text-align: center;
+    padding: 3rem;
+}
+
+.contacts {
+    grid-column: 2 / 3;
+    display: flex;
+}
+
+.contact {
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contact a {
+    color: #131313;
+    transition: color 350ms ease-in-out;
+}
+
+.cv-button {
+    grid-column: 2 / 3;
+    margin: 2rem;
+}
+
 .footer {
     width: 100%;
     display: flex;
