@@ -51,7 +51,7 @@ body {
 }
 
 .open-menu,
-close-menu {
+.close-menu {
     font-size: 2rem;
     cursor: pointer;
 }
@@ -62,7 +62,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 3;
 }
 
 .nav-list {
@@ -78,13 +78,15 @@ nav {
     font-size: 1.2rem;
 }
 
-.nav-list-item a {
-    color: #000;
+.nav-list-item a,
+.menu-list-item a {
+    color: #1a1a1a;
     text-decoration: none;
     position: relative;
 }
 
-.nav-list-item a::after {
+.nav-list-item a::after,
+.menu-list-item a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -97,7 +99,8 @@ nav {
     transition: transform 200ms ease-in;
 }
 
-.nav-list-item a:hover::after {
+.nav-list-item a:hover::after,
+.menu-list-item a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
@@ -108,8 +111,8 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #fff;
-    color: #000;
+    background: #f3f3f3;
+    color: #1a1a1a;
     z-index: 10;
     display: none;
 }
@@ -117,20 +120,19 @@ nav {
 .close-menu {
     position: absolute;
     top: 5vh;
-    right: 15%;
-    color: #000;
-    z-index: 11;
+    right: 8%;
+    color: #1a1a1a;
 }
 
 .menu-list {
     list-style: none;
     margin: 15vh auto;
-    width: 70%;
+    width: 84%;
 }
 
 .menu-list-item {
-    font-size: 3.5rem;
-    line-height: 2.5;
+    font-size: 2rem;
+    line-height: 2;
     font-weight: 600;
     text-align: right;
 }
@@ -160,7 +162,7 @@ nav {
 }
 
 .cover-contact a {
-    color: #000;
+    color: #1a1a1a;
     text-decoration: none;
     transition: color 350ms ease-in-out;
 }
@@ -228,16 +230,6 @@ nav {
 .cta-projects:hover:after {
     top: 50%;
     bottom: 0;
-}
-
-/* scroll donw animation */
-.down-anim {
-    /* border-left: 1px solid #000;
-    border-bottom: 1px solid #000; */
-    transform: rotate(45);
-    width: 50px;
-    height: 50px;
-    background-color: #000;
 }
 
 .cover-location {
@@ -425,9 +417,8 @@ button {
 
 .contact-section {
     display: grid;
-    align-items: center;
-    justify-content: center;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    /* align-items: center;
+    justify-content: center; */
     grid-template-rows: auto auto auto;
     background: #e3f7fb;
 }
@@ -449,13 +440,16 @@ button {
 }
 
 .contact a {
-    color: #131313;
+    color: #1a1a1a;
     transition: color 350ms ease-in-out;
 }
 
 .cv-button {
     margin: 2rem auto 3rem;
     max-width: 250px;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-family: Merriweather, serif;
 }
 
 .footer {
@@ -466,7 +460,7 @@ button {
     flex-direction: column;
     padding: 3rem;
     font-size: 0.8rem;
-    background: #131313;
+    background: #1a1a1a;
     color: #fff;
     position: relative;
 }
