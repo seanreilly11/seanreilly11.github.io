@@ -300,6 +300,16 @@ button {
     color: #f3f3f3;
 }
 
+.project-card:nth-child(even) .go-to-project-btn a {
+    color: #214d67;
+    text-decoration: none;
+}
+
+.project-card:nth-child(odd) .go-to-project-btn a {
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
 .project-details {
     padding: 3rem 3rem 1rem;
     max-width: 450px;
