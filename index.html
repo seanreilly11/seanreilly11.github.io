@@ -4,6 +4,10 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/jpg" href="assets/logo1.JPG" />
         <title>Sean Reilly | Web Developer</title>
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
@@ -11,8 +15,8 @@
             <span class="cover-border"></span>
             <span class="cover-border"></span>
             <nav>
-                <h2 class="brand">Sean Reilly</h2>
-                <ul class="nav-list">
+                <h2 class="brand" data-aos="fade-right">Sean Reilly</h2>
+                <ul class="nav-list" data-aos="fade-left">
                     <li class="nav-list-item">
                         <a href="#projects">Projects</a>
                     </li>
@@ -47,8 +51,12 @@
                 </ul>
             </div>
             <div class="cover-center">
-                <h1 class="main-heading">Web Developer</h1>
-                <div class="cover-contacts">
+                <h1 class="main-heading" data-aos="fade-up">Web Developer</h1>
+                <div
+                    class="cover-contacts"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                >
                     <div class="cover-contact github-contact">
                         <a
                             href="https://github.com/seanreilly11"
@@ -74,16 +82,28 @@
                         </a>
                     </div>
                 </div>
-                <a href="#projects" class="cta-projects">Projects</a>
+                <a
+                    href="#projects"
+                    class="cta-projects"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    >Projects</a
+                >
             </div>
-            <h4 class="cover-location">Wellington, NZ</h4>
+            <h4
+                class="cover-location"
+                data-aos="fade-left"
+                data-aos-anchor-placement="top-bottom"
+            >
+                Wellington, NZ
+            </h4>
         </div>
 
         <div class="content" id="projects">
             <div class="content-section">
-                <h2 class="content-heading">My Projects</h2>
+                <h2 class="content-heading" data-aos="fade-up">My Projects</h2>
                 <div class="project-card proj-1">
-                    <div class="project-details">
+                    <div class="project-details" data-aos="fade-up">
                         <h3 class="project-title">Restaurant Website</h3>
                         <div class="project-body">
                             <p>
@@ -115,7 +135,11 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="project-img-box">
+                    <div
+                        class="project-img-box"
+                        data-aos="fade-up"
+                        data-aos-delay="250"
+                    >
                         <img
                             class="project-img"
                             src="assets/res-mockup.jpg"
@@ -124,7 +148,7 @@
                     </div>
                 </div>
                 <div class="project-card proj-2">
-                    <div class="project-details">
+                    <div class="project-details" data-aos="fade-up">
                         <h3 class="project-title">Trade Easy</h3>
                         <div class="project-body">
                             <p class="text-pb">
@@ -167,7 +191,11 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="project-img-box">
+                    <div
+                        class="project-img-box"
+                        data-aos="fade-up"
+                        data-aos-delay="250"
+                    >
                         <img
                             class="project-img"
                             src="assets/trade-mockup.jpg"
@@ -177,7 +205,7 @@
                 </div>
                 <!-- TODO: add news api project -->
                 <div class="project-card proj-3">
-                    <div class="project-details">
+                    <div class="project-details" data-aos="fade-up">
                         <h3 class="project-title">Union Tattoo</h3>
                         <div class="project-body">
                             <p>
@@ -193,16 +221,17 @@
                                 <li class="project-body-tools-list-item">
                                     Web Design
                                 </li>
-                                <!-- <li class="project-body-tools-list-item">
-                                    React Hooks
-                                </li> -->
                                 <li class="go-to-project-btn">
                                     See live site (coming soon)
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="project-img-box">
+                    <div
+                        class="project-img-box"
+                        data-aos="fade-up"
+                        data-aos-delay="250"
+                    >
                         <img
                             class="project-img"
                             src="assets/union-mockup.jpg"
@@ -211,7 +240,7 @@
                     </div>
                 </div>
                 <div class="project-card proj-4">
-                    <div class="project-details">
+                    <div class="project-details" data-aos="fade-up">
                         <h3 class="project-title">
                             Tourism NZ Journey Planner
                         </h3>
@@ -246,7 +275,11 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="project-img-box">
+                    <div
+                        class="project-img-box"
+                        data-aos="fade-up"
+                        data-aos-delay="250"
+                    >
                         <img
                             class="project-img"
                             src="assets/tour-mockup.jpg"
@@ -256,14 +289,17 @@
                 </div>
             </div>
             <div class="content-section" id="about">
-                <h2 class="content-heading">About Me</h2>
+                <h2 class="content-heading" data-aos="fade-up">About Me</h2>
                 <div class="about-container">
                     <div class="about-section">
                         <div class="about-section-side">
-                            <h2 class="content-section-heading">
+                            <h2
+                                class="content-section-heading"
+                                data-aos="fade-up"
+                            >
                                 My Passion
                             </h2>
-                            <p class="text-pb">
+                            <p class="text-pb" data-aos="fade-up">
                                 My name is Sean Reilly and I am a Web Developer
                                 primarily focused on Front-End technologies but
                                 with a passion to be a Full Stack Developer in
@@ -271,7 +307,7 @@
                                 comprehensive web solutions for companies - big
                                 and small.
                             </p>
-                            <p>
+                            <p data-aos="fade-up">
                                 My spare time consists of refereeing football at
                                 a national level, playing hockey, dabbling in
                                 the French language as well as looking for new
@@ -281,8 +317,16 @@
                     </div>
                     <div class="about-section">
                         <div class="about-section-side">
-                            <h2 class="content-section-heading">Education</h2>
-                            <div class="about-section-school-wrapper">
+                            <h2
+                                class="content-section-heading"
+                                data-aos="fade-up"
+                            >
+                                Education
+                            </h2>
+                            <div
+                                class="about-section-school-wrapper"
+                                data-aos="fade-up"
+                            >
                                 <div class="about-section-school">
                                     <h4 class="about-section-school-title">
                                         Yoobee School of Design
@@ -308,7 +352,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <p>
+                            <p data-aos="fade-up">
                                 Although I did not complete my studies at
                                 university, my year and a half there taught me
                                 programming language logic and syntax as I
@@ -320,10 +364,13 @@
                     </div>
                     <div class="about-section">
                         <div class="about-section-side">
-                            <h2 class="content-section-heading">
+                            <h2
+                                class="content-section-heading"
+                                data-aos="fade-up"
+                            >
                                 Skills and Tools
                             </h2>
-                            <div class="skills-wrapper">
+                            <div class="skills-wrapper" data-aos="fade-up">
                                 <div class="skill">
                                     <i class="fab fa-html5 skill-logo"></i>
                                     <div class="skill-text">HTML</div>
@@ -390,16 +437,12 @@
             </div>
             <div class="content-section" id="contact">
                 <div class="contact-container">
-                    <h2 class="content-heading">Get In Touch</h2>
+                    <h2 class="content-heading" data-aos="fade-up">
+                        Get In Touch
+                    </h2>
 
                     <div class="contact-section">
-                        <!-- <h2 class="contact-caption">
-                            My projects are available to check out on my GitHub
-                            or you can check me out a bit more on my LinkedIn
-                            where you can message me or you can flick me an
-                            email
-                        </h2> -->
-                        <div class="contacts">
+                        <div class="contacts" data-aos="fade-up">
                             <div class="contact github-contact">
                                 <a
                                     href="https://github.com/seanreilly11"
@@ -429,6 +472,7 @@
                             href="assets/cv-2020.pdf"
                             target="_blank"
                             class="cta-projects cv-button"
+                            data-aos="fade-up"
                         >
                             View My CV
                         </a>
@@ -450,6 +494,7 @@
             crossorigin="anonymous"
             data-auto-replace-svg="nest"
         ></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

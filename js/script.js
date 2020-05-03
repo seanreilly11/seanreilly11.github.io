@@ -1,3 +1,5 @@
+AOS.init();
+
 $(document).ready(function () {
     $(".open-menu").click(function () {
         $(".full-menu").show();
