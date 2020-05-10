@@ -116,19 +116,18 @@ nav {
 
 .close-menu {
     position: absolute;
-    top: 5vh;
-    right: 8%;
+    top: 2rem;
+    right: 2rem;
     color: #1a1a1a;
 }
 
 .menu-list {
     list-style: none;
-    margin: 15vh auto;
-    width: 84%;
+    margin: 15vh 2rem;
 }
 
 .menu-list-item {
-    font-size: 2rem;
+    font-size: 1.4rem;
     line-height: 2;
     font-weight: 600;
     text-align: right;
@@ -405,8 +404,6 @@ button {
 }
 
 .skills-wrapper {
-    width: 80%;
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }

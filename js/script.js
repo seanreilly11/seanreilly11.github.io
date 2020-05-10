@@ -2,12 +2,12 @@ AOS.init();
 
 $(document).ready(function () {
     $(".open-menu").click(function () {
-        $(".full-menu").show();
+        $(".full-menu").slideDown();
     });
     $(".close-menu").click(function () {
-        $(".full-menu").hide();
+        $(".full-menu").slideUp();
     });
     $(".menu-list-item").click(function () {
-        $(".full-menu").hide();
+        $(".full-menu").slideUp();
     });
 });
