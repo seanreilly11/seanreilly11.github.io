@@ -25,14 +25,14 @@ body {
     background: #e3f7fb;
 }
 
-.cover-border:nth-child(1) {
+/* .cover-border:nth-child(1) {
     position: absolute;
-    top: 6.5rem;
+    top: 9rem;
     left: 0;
     width: 100%;
     height: 2vh;
     background: #214d67;
-}
+} */
 
 .cover-border:nth-child(2) {
     position: absolute;
@@ -44,13 +44,13 @@ body {
 }
 
 .brand {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 400;
 }
 
 .open-menu,
 .close-menu {
-    font-size: 2rem;
+    font-size: 4rem;
     cursor: pointer;
 }
 
@@ -60,6 +60,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2vh solid #214d67;
 }
 
 .nav-list {
@@ -127,7 +128,7 @@ nav {
 }
 
 .menu-list-item {
-    font-size: 1.4rem;
+    font-size: 2rem;
     line-height: 2;
     font-weight: 600;
     text-align: right;
@@ -142,7 +143,7 @@ nav {
 }
 
 .main-heading {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     font-family: Merriweather, serif;
     font-weight: normal;
 }
@@ -155,7 +156,7 @@ nav {
 
 .cover-contact {
     padding: 0 1rem 1rem;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
 }
 
 .cover-contact a {
@@ -178,14 +179,14 @@ nav {
 
 .cta-projects {
     position: relative;
-    padding: 0.5rem 1.5rem;
+    padding: 1rem 2rem;
     background-color: transparent;
     border: 2px solid #214d67;
     cursor: pointer;
     outline: none;
     text-decoration: none;
     color: #1a1a1a;
-    font-size: 1.2rem;
+    font-size: 3rem;
     transition: box-shadow 350ms ease-in-out;
 }
 
@@ -258,6 +259,7 @@ button {
     width: 100%;
     min-height: 100vh;
     position: relative;
+    font-size: 1rem;
 }
 
 /* alternate background and colour */
@@ -311,7 +313,6 @@ button {
 
 .project-details {
     padding: 3rem 3rem 1rem;
-    max-width: 450px;
 }
 
 .project-title {
@@ -348,7 +349,6 @@ button {
 
 .project-img-box {
     padding: 2rem 1rem;
-    max-width: 600px;
     margin: auto;
 }
 
@@ -491,6 +491,12 @@ button {
     }
     .about-section-school-wrapper {
         display: flex;
+    }
+    .project-details {
+        max-width: 450px;
+    }
+    .project-img-box {
+        max-width: 600px;
     }
 }
 
