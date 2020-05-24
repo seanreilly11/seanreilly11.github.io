@@ -22,35 +22,19 @@ body {
 .cover {
     position: relative;
     min-height: 100vh;
-    background: #e3f7fb;
-}
-
-/* .cover-border:nth-child(1) {
-    position: absolute;
-    top: 9rem;
-    left: 0;
-    width: 100%;
-    height: 2vh;
+    /* background: #e3f7fb; */
     background: #214d67;
-} */
-
-.cover-border:nth-child(2) {
-    position: absolute;
-    top: 0;
-    right: 20vw;
-    width: 2vh;
-    height: 100%;
-    background: linear-gradient(to bottom, #214d67, #e3f7fb);
+    color: #f3f3f3;
 }
 
 .brand {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
 .open-menu,
 .close-menu {
-    font-size: 4rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 
@@ -60,7 +44,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2vh solid #214d67;
 }
 
 .nav-list {
@@ -78,7 +61,8 @@ nav {
 
 .nav-list-item a,
 .menu-list-item a {
-    color: #1a1a1a;
+    color: #f3f3f3;
+    /* color: #1a1a1a; */
     text-decoration: none;
     position: relative;
 }
@@ -128,7 +112,7 @@ nav {
 }
 
 .menu-list-item {
-    font-size: 2rem;
+    font-size: 1.4rem;
     line-height: 2;
     font-weight: 600;
     text-align: right;
@@ -143,7 +127,7 @@ nav {
 }
 
 .main-heading {
-    font-size: 4.5rem;
+    font-size: 3.2rem;
     font-family: Merriweather, serif;
     font-weight: normal;
 }
@@ -156,11 +140,12 @@ nav {
 
 .cover-contact {
     padding: 0 1rem 1rem;
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
 
 .cover-contact a {
-    color: #1a1a1a;
+    color: #f3f3f3;
+    /* color: #1a1a1a; */
     text-decoration: none;
     transition: color 350ms ease-in-out;
 }
@@ -179,14 +164,16 @@ nav {
 
 .cta-projects {
     position: relative;
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.5rem;
     background-color: transparent;
-    border: 2px solid #214d67;
+    border: 2px solid #e3f7fb;
+    /* border: 2px solid #214d67; */
     cursor: pointer;
     outline: none;
     text-decoration: none;
-    color: #1a1a1a;
-    font-size: 3rem;
+    color: #f3f3f3;
+    /* color: #1a1a1a; */
+    font-size: 1.6rem;
     transition: box-shadow 350ms ease-in-out;
 }
 
@@ -203,7 +190,8 @@ nav {
 .cta-projects::before {
     content: "";
     position: absolute;
-    background: #e3f7fb;
+    /* background: #e3f7fb; */
+    background: #214d67;
     width: 4px;
     transition: all 350ms ease-in-out;
 }
@@ -235,7 +223,8 @@ nav {
     bottom: 1rem;
     right: 1rem;
     letter-spacing: 0.2rem;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(243, 243, 243, 0.5);
+    /* color: rgba(0, 0, 0, 0.5); */
 }
 
 .content {
@@ -248,7 +237,11 @@ nav {
     text-align: center;
     font-weight: 400;
     letter-spacing: 0.2rem;
-    padding: 25vh 0;
+    padding: 10vh 0;
+}
+
+.content-heading-small {
+    padding: 10vh 0;
 }
 
 button {
@@ -257,9 +250,12 @@ button {
 
 .project-card {
     width: 100%;
-    min-height: 100vh;
     position: relative;
     font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3rem 2rem;
 }
 
 /* alternate background and colour */
@@ -284,12 +280,6 @@ button {
     color: #1a1a1a;
 }
 
-/* alternate tools list hover opacity */
-.project-card:nth-child(even) .project-body-tools-list-item:hover,
-.project-card:nth-child(odd) .project-body-tools-list-item:hover {
-    opacity: 1;
-}
-
 /* alternate go to project button colour */
 .project-card:nth-child(even) .go-to-project-btn {
     background: #f3f3f3;
@@ -312,7 +302,7 @@ button {
 }
 
 .project-details {
-    padding: 3rem 3rem 1rem;
+    padding-bottom: 2rem;
 }
 
 .project-title {
@@ -342,14 +332,17 @@ button {
     transition: opacity 350ms ease-in-out;
 }
 
+.project-body-tools-list-item:hover {
+    opacity: 1;
+}
+
 .go-to-project-btn {
     cursor: pointer;
     opacity: 1;
 }
 
 .project-img-box {
-    padding: 2rem 1rem;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .project-img {
@@ -394,7 +387,7 @@ button {
 
 .about-section-school {
     line-height: 1.4;
-    padding: 0 1rem 1rem;
+    padding: 0 1rem 1rem 0;
     flex: 1;
 }
 
@@ -466,70 +459,41 @@ button {
 }
 
 /* media queries */
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
     .open-menu {
         display: none;
     }
     .nav-list {
         display: block;
     }
-    .brand {
-        font-size: 2.2rem;
-    }
-    .main-heading {
-        font-size: 3rem;
-    }
     .cover-contact {
         padding: 0 1.5rem 1rem;
-        font-size: 2rem;
-    }
-    .cta-projects {
-        font-size: 1.6rem;
-        padding: 0.5rem 1.5rem;
-    }
-    .cover-border:nth-child(2) {
-        left: 16rem;
     }
     .about-section-school-wrapper {
         display: flex;
     }
+}
+
+@media only screen and (min-width: 998px) {
+    .project-card {
+        flex-direction: row;
+        padding: 4rem 3rem;
+        min-height: 100vh;
+    }
     .project-details {
         max-width: 450px;
     }
-    .project-img-box {
-        max-width: 600px;
-    }
-}
-
-@media only screen and (min-device-width: 998px) {
-    .project-img-box {
-        display: inline-block;
-        position: absolute;
-        top: 10vh;
-        max-width: 50vw;
-    }
-
-    .project-details {
-        display: inline-block;
-        position: absolute;
-        max-width: 40vw;
-        top: 0;
-    }
-
-    .project-card:nth-child(even) .project-details {
-        left: 0;
-    }
-
     .project-card:nth-child(odd) .project-details {
         right: 0;
         text-align: right;
+        order: 2;
+        padding-left: 2rem;
     }
-
-    .project-card:nth-child(even) .project-img-box {
-        right: 5vw;
+    .project-card:nth-child(even) .project-details {
+        padding-right: 2rem;
     }
-    .project-card:nth-child(odd) .project-img-box {
-        left: 5vw;
+    .project-img-box {
+        max-width: 700px;
     }
     .about-container {
         grid-template-columns: 45% 55%;
