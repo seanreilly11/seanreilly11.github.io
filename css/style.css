@@ -408,10 +408,6 @@ button {
     font-size: 0.8rem;
 }
 
-.about-section-school-fail {
-    width: 80%;
-}
-
 .skills-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -485,7 +481,7 @@ button {
         display: block;
     }
     .cover-center {
-        width: 45%;
+        width: 60%;
     }
     .cover-contact {
         padding: 0 1.5rem 1rem;
@@ -493,6 +489,9 @@ button {
 }
 
 @media only screen and (min-width: 998px) {
+    .cover-center {
+        width: 45%;
+    }
     .project-card {
         flex-direction: row;
         padding: 4rem 3rem;
@@ -515,5 +514,8 @@ button {
     }
     .about-container {
         flex-direction: row;
+    }
+    about-section-school-fail {
+        width: 80%;
     }
 }
