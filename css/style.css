@@ -531,4 +531,7 @@ button {
     .project-img-box {
         max-width: 1000px;
     }
+    .project-card {
+        padding: 6rem 4rem;
+    }
 }
