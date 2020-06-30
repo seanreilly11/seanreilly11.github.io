@@ -19,11 +19,6 @@ body {
     color: #1a1a1a;
 }
 
-.container{
-    max-width: 1350px;
-    margin: auto;
-}
-
 .cover {
     position: relative;
     min-height: 100vh;
