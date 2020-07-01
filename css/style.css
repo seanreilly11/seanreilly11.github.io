@@ -383,7 +383,7 @@ button {
     color: #f3f3f3;
 }
 
-.text-pb {
+.project-body > p:not(:last-of-type), .about-section-side > p:not(:last-of-type){
     padding-bottom: 1rem;
 }
 
@@ -464,7 +464,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 5rem;
     font-size: 0.8rem;
     background: #1a1a1a;
     color: #fff;
